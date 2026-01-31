@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ROUTES } from "../routes/Routes";
 const Header = () => {
   const [isShow, setIsShow] = useState(false);
@@ -52,13 +52,17 @@ const Header = () => {
         <ul className="gap-8 h-full flex flex-col items-center justify-center md:flex-row">
           {NavRoutes.map(({ path, label }) => {
             return (
-              <Link
+              <NavLink
                 to={path}
-                className="text-white transition duration-150 uppercase hover:text-main"
+                className={({ isActive }) =>
+                  ` transition duration-150 uppercase hover:text-main ${
+                    isActive ? "text-main font-bold" : " text-white"
+                  }`
+                }
                 onClick={() => setIsShow(false)}
               >
                 {label}
-              </Link>
+              </NavLink>
             );
           })}
         </ul>

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="h-35 flex flex-col items-center bg-footer-bg  ">
+    <div className="h-35 flex flex-col items-center bg-footer-bg  bottom-0 w-full order-last  ">
       <Link to={"/"}>
         {" "}
         <img

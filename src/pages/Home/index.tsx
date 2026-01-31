@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 const Home: FC = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[60%_45%] px-1 md:px-8 items-start justify-center lg:h-[calc(100vh-80px)] min-h-96 md:max-w-5xl md:items-center mx-auto ">
+    <div className="grid grid-cols-1 lg:grid-cols-[60%_45%] px-1 md:px-8 items-start justify-center lg:h-[calc(100vh-80px)] min-h-screen md:max-w-5xl md:items-center mx-auto ">
       {/* info */}
       <motion.div
         className="flex flex-col items-start gap-3 bg-black-glass  p-6 md:px-8 shadow-xl rounded-xl max-w-xl"

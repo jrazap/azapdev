@@ -4,7 +4,7 @@ import type { FC } from "react";
 const About: FC = () => {
   return (
     <>
-      <div className=" max-w-6xl grid grid-cols-1 lg:grid-cols-[70%_30%] gap-5 items-start p-4 m-auto mt-30 bg-black-glass">
+      <div className=" max-w-6xl grid grid-cols-1 lg:grid-cols-[70%_30%] gap-5 items-start justify-center  p-4 m-auto mt-30 bg-black-glass lg:h-[calc(100vh-150px)] content-center  min-h-96">
         {/* info */}
         <div className="flex items-start flex-col ms-8 gap-6 p-5">
           {/* ABOUT ME */}
@@ -41,6 +41,7 @@ const About: FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-8">
               {/* HTML */}
               <a href="" className="flex items-center w-fit group gap-2">
+                <i className="fa-brands fa-html5 text-white size-4 brightness-50 group-hover:brightness-125 transition duration-150"></i>
                 <span className="text-white text-sm brightness-50 tracking-[1.5px] group-hover:text-main group-hover:brightness-125 transition duration-200">
                   HTML
                 </span>
@@ -48,6 +49,7 @@ const About: FC = () => {
 
               {/* CSS */}
               <a href="" className="flex items-center w-fit group gap-2">
+                <i className="fa-brands fa-css3 text-white size-4 brightness-50 group-hover:brightness-125 transition duration-150"></i>
                 <span className="text-white text-sm brightness-50 tracking-[1.5px] group-hover:text-main group-hover:brightness-125 transition duration-200">
                   CSS
                 </span>
@@ -55,6 +57,7 @@ const About: FC = () => {
 
               {/* <!-- SCSS --> */}
               <a href="" className="flex items-center w-fit group gap-2">
+                <i className="fa-brands fa-sass text-white size-4 brightness-50 group-hover:brightness-125 transition duration-150"></i>
                 <span className="text-white text-sm brightness-50 tracking-[1.5px] group-hover:text-main group-hover:brightness-125 transition duration-200">
                   SCSS
                 </span>
@@ -62,6 +65,7 @@ const About: FC = () => {
 
               {/* JAVASCRIPT */}
               <a href="" className="flex items-center w-fit group gap-2">
+                <i className="fa-brands fa-js text-white size-4 brightness-50 group-hover:brightness-125 transition duration-150"></i>
                 <span className="text-white text-sm brightness-50 tracking-[1.5px] group-hover:text-main group-hover:brightness-125 transition duration-200">
                   Javascript
                 </span>
@@ -69,6 +73,8 @@ const About: FC = () => {
 
               {/* <!-- BOOTSTRAP --> */}
               <a href="" className="flex items-center w-fit group gap-2">
+                <i className="fa-brands fa-bootstrap text-white size-4 brightness-50 group-hover:brightness-125 transition duration-150"></i>
+
                 <span className="text-white text-sm brightness-50 tracking-[1.5px] group-hover:text-main group-hover:brightness-125 transition duration-200">
                   Bootstrap
                 </span>
@@ -76,6 +82,11 @@ const About: FC = () => {
 
               {/* <!-- TAILWIND --> */}
               <a href="" className="flex items-center w-fit group gap-2">
+                <img
+                  src="../../../public/img/icons/icons8-tailwindcss-48.svg"
+                  className="size-4 grayscale p-0 brightness-50 group-hover:brightness-125 transition duration-200"
+                  alt=""
+                />
                 <span className="text-white text-sm brightness-50 tracking-[1.5px] group-hover:text-main group-hover:brightness-125 transition duration-200">
                   TailwindCSS
                 </span>
@@ -83,6 +94,7 @@ const About: FC = () => {
 
               {/* <!-- GITHUP --> */}
               <a href="" className="flex items-center w-fit group gap-2">
+                <i className="fa-brands fa-github text-white size-4 brightness-50 group-hover:brightness-125 transition duration-200"></i>
                 <span className="text-white text-sm brightness-50 tracking-[1.5px] group-hover:text-main group-hover:brightness-125 transition duration-200">
                   Github
                 </span>
@@ -90,6 +102,11 @@ const About: FC = () => {
 
               {/* <!-- TypeScript --> */}
               <a href="" className="flex items-center w-fit group gap-2">
+                <img
+                  src="../../../public/img/icons/icons8-typescript-48.svg"
+                  className="size-4 grayscale p-0 brightness-50 group-hover:brightness-125 transition duration-200"
+                  alt=""
+                />
                 <span className="text-white text-sm brightness-50 tracking-[1.5px] group-hover:text-main group-hover:brightness-125 transition duration-200">
                   Typescript
                 </span>
