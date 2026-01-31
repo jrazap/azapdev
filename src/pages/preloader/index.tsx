@@ -5,6 +5,7 @@ const Preloader = () => {
         src="../../../public/img/logo.webp"
         alt=""
         className="size-90 animate-pulse"
+        loading="lazy"
       />
     </div>
   );

@@ -28,7 +28,7 @@ const About: FC = () => {
           <motion.div
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 100, duration: 1 }}
+            transition={{ type: "spring", stiffness: 150, duration: 3 }}
           >
             <h2 className="text-white font-bold text-2xl flex gap-2 items-baseline ">
               <span className=" text-white bg-white h-5 w-1 md:w-1 md:h-7  rounded-3xl"></span>
@@ -120,7 +120,7 @@ const About: FC = () => {
           className=" order-first lg:order-1 flex justify-center items-center object-contain "
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 100, duration: 1 }}
+          transition={{ type: "spring", stiffness: 150, duration: 2 }}
         >
           <img
             src="../../../public/img/me.webp"

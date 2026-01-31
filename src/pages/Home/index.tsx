@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import type { FC } from "react";
+import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 
 const Home: FC = () => {
@@ -15,7 +16,7 @@ const Home: FC = () => {
         <h2 className="text-white font-bold text-3xl md:text-5xl lg:text-6xl">
           &lt;Ahmed Elazap/&gt;
         </h2>
-        <p className="flex items-baseline gap-2 text-white font-bold text-lg md:text-3xl ms-8 uppercase whitespace-nowrap">
+        <div className="flex items-baseline gap-2 text-white font-bold text-lg md:text-3xl ms-8 uppercase whitespace-nowrap">
           i Am
           <span className="text-main text-xl md:text-4xl">
             <Typewriter
@@ -29,14 +30,21 @@ const Home: FC = () => {
               }}
             />
           </span>
-        </p>
+        </div>
+        <Link
+          to={"/about"}
+          className="text-white uppercase bg-main font-bold px-8 py-2 text-2xl rounded-3xl my-4 outline-main tracking-wider "
+        >
+          {" "}
+          Resume
+        </Link>
       </motion.div>
 
       {/* logo */}
       <motion.img
         src="../../../public/img/logo.webp"
         alt=""
-        className="mx-auto order-first lg:order-last  object-contain"
+        className="mx-auto order-first lg:order-last  object-contain animate-bounce"
         loading="lazy"
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
