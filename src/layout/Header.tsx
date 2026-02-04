@@ -27,7 +27,7 @@ const Header = () => {
       {/* logo */}
       <div className="cursor-pointer md:block">
         <img
-          src="./img/logo.webp"
+          src="/img/logo.webp"
           alt=""
           className="size-20 brightness-200 object-contain transition duration-500 hover:brightness-50"
           loading="lazy"

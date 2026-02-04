@@ -41,7 +41,7 @@ const Home: FC = () => {
 
       {/* logo */}
       <motion.img
-        src="../../../public/img/logo.webp"
+        src="/img/logo.webp"
         alt=""
         className="mx-auto order-first lg:order-last  object-contain animate-bounce"
         loading="lazy"

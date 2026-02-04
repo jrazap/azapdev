@@ -9,12 +9,7 @@ const Works: FC = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 100, delay: 0 }}
     >
-      {" "}
-      <img
-        src="../../../public/img/logo.webp"
-        alt=""
-        className="size-80 object-contain"
-      />
+      <img src="/img/logo.webp" alt="" className="size-80 object-contain" />
       <h1 className=" text-white text-4xl ">Wating.....</h1>
     </motion.div>
   );

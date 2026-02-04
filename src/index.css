@@ -16,7 +16,7 @@
   }
 
   body {
-    background-image: url("../public/img/bg2.jpg");
+    background-image: url("/img/bg2.jpg");
     @apply min-h-screen bg-cover bg-center bg-no-repeat bg-fixed;
   }
 }

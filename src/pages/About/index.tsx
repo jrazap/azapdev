@@ -15,7 +15,7 @@ const About: FC = () => {
             transition={{ type: "spring", stiffness: 100, duration: 1 }}
           >
             <h1 className="text-main font-bold text-4xl md:text-6xl flex gap-3 items-baseline ">
-              <span className=" text-white bg-white h-7 w-2 md:h-10 md:text-5xl rounded-3xl"></span>{" "}
+              <span className=" text-white bg-white h-7 w-2 md:h-10 md:text-5xl rounded-3xl"></span>
               About Me
             </h1>
             <p className="text-sec-title px-5 sm:px-9 py-4">
@@ -34,8 +34,8 @@ const About: FC = () => {
               <span className=" text-white bg-white h-5 w-1 md:w-1 md:h-7  rounded-3xl"></span>
               <span className="text-main text-2xl md:text-3xl font-bold">
                 Skills
-              </span>{" "}
-              & Technologies{" "}
+              </span>
+              & Technologies
             </h2>
             {/* tec */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-8">
@@ -83,7 +83,7 @@ const About: FC = () => {
               {/* <!-- TAILWIND --> */}
               <a href="" className="flex items-center w-fit group gap-2">
                 <img
-                  src="../../../public/img/icons/icons8-tailwindcss-48.svg"
+                  src="/img/icons/icons8-tailwindcss-48.svg"
                   className="size-4 grayscale p-0 brightness-50 group-hover:brightness-125 transition duration-200"
                   alt=""
                 />
@@ -101,7 +101,7 @@ const About: FC = () => {
               {/* <!-- TypeScript --> */}
               <a href="" className="flex items-center w-fit group gap-2">
                 <img
-                  src="../../../public/img/icons/icons8-typescript-48.svg"
+                  src="/img/icons/icons8-typescript-48.svg"
                   className="size-4 grayscale p-0 brightness-50 group-hover:brightness-125 transition duration-200"
                   alt=""
                 />
@@ -121,7 +121,7 @@ const About: FC = () => {
           transition={{ type: "spring", stiffness: 150, duration: 2 }}
         >
           <img
-            src="../../../public/img/me.webp"
+            src="/img/me.webp"
             alt=""
             className=" w-50 flex justify-center rounded-2xl"
             loading="lazy"

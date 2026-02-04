@@ -3,9 +3,8 @@ const Footer = () => {
   return (
     <div className="h-35 flex flex-col items-center bg-footer-bg  bottom-0 w-full order-last  ">
       <Link to={"/"}>
-        {" "}
         <img
-          src="../../public/img/logo.webp"
+          src="/img/logo.webp"
           alt=""
           className="size-24 object-contain brightness-50 hover:brightness-100 transition duration-300 cursor-pointer"
           loading="lazy"
@@ -34,7 +33,7 @@ const Footer = () => {
         >
           <span className="text-xl text-white brightness-50 bg-icon-bg rounded-2xl w-10 h-10 flex justify-center items-center hover:brightness-100 hover:text-danger hover:bg-black transition duration-150">
             <i className="fa-brands fa-linkedin"></i>
-          </span>{" "}
+          </span>
         </a>
 
         {/* <!-- whatsapp --> */}
