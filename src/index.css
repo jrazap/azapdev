@@ -25,6 +25,9 @@
     @apply min-h-screen bg-cover bg-fixed bg-center bg-no-repeat;
     @apply bg-background text-foreground;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @theme inline {

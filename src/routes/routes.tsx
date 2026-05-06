@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { About, ErrorPage, Home, Works } from '../pages';
+import { ErrorPage, Home, Works } from '../pages';
 
 export const ROUTES = {
   HOME: '/',
@@ -18,10 +18,7 @@ export const routes: Route[] = [
     path: ROUTES.HOME,
     element: <Home />,
   },
-  {
-    path: ROUTES.ABOUT,
-    element: <About />,
-  },
+
   {
     path: ROUTES.WORKS,
     element: <Works />,

@@ -18,10 +18,7 @@ const Header = () => {
       path: ROUTES.HOME,
       label: t('common:HEADER.HOME'),
     },
-    {
-      path: ROUTES.ABOUT,
-      label: t('common:HEADER.ABOUT'),
-    },
+
     {
       path: ROUTES.WORKS,
       label: t('common:HEADER.WORKS'),
@@ -30,7 +27,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="sticky top-0 z-40 mx-auto flex w-full max-w-6xl flex-row items-center justify-between bg-black/60 px-5 py-4 backdrop-blur-md md:px-8 md:py-0">
+      <header className="sticky top-5 z-40 mx-auto my-4 flex w-full max-w-6xl flex-row items-center justify-between rounded-4xl bg-black/60 px-5 py-4 backdrop-blur-md md:px-8 md:py-0">
         {/* logo */}
         <div className="flex flex-row items-center justify-center gap-3">
           <img

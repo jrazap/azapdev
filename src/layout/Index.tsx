@@ -17,13 +17,13 @@ const Index = () => {
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between">
+    <>
       <Header />
-      <main className="flex flex-1 items-center justify-center">
-        <AppRouter />
-      </main>
+
+      <AppRouter />
+
       <Footer />
-    </div>
+    </>
   );
 };
 

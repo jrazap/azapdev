@@ -99,15 +99,18 @@ const About: FC = () => {
   ];
   return (
     <>
-      <div className="mx-auto my-14 grid h-full max-w-6xl grid-cols-1 items-center justify-center gap-5 overflow-hidden bg-black/80 p-4 lg:grid-cols-[70%_30%]">
+      <div
+        id="about"
+        className="mx-auto my-14 grid h-full max-w-6xl grid-cols-1 items-center justify-center gap-5 overflow-hidden bg-black/80 p-4 lg:grid-cols-[70%_30%]"
+      >
         {/* info */}
         <div className="flex flex-col items-start gap-6 md:ms-8 md:p-5">
           {/* ABOUT ME */}
           <motion.div
-            className=""
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 100, duration: 1 }}
+            viewport={{ once: true }}
           >
             <h1 className="text-main flex items-baseline gap-3 text-4xl font-bold md:text-6xl">
               <span className="h-7 w-2 rounded-3xl bg-white text-white md:h-10 md:text-5xl"></span>
@@ -120,9 +123,10 @@ const About: FC = () => {
 
           {/* SKILLS */}
           <motion.div
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ type: 'spring', stiffness: 150, duration: 3 }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ type: 'spring', stiffness: 100, duration: 1 }}
+            viewport={{ once: true }}
           >
             <h2 className="flex items-baseline gap-2 text-2xl font-bold text-white">
               <span className="h-5 w-1 rounded-3xl bg-white text-white md:h-7 md:w-1"></span>
@@ -132,7 +136,7 @@ const About: FC = () => {
               {t('common:ABOUTpage.TECHNOLOGIES')}
             </h2>
             {/* tec */}
-            <div className="xsm:grid-cols-3 mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
+            <div className="sm:grid-cols-3 mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
               {skills.map((skill, i) => (
                 <a
                   key={i}
@@ -156,9 +160,10 @@ const About: FC = () => {
         {/* img */}
         <motion.div
           className="order-first flex items-center justify-center object-contain lg:order-1"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ type: 'spring', stiffness: 150, duration: 2 }}
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 100, duration: 1 }}
+          viewport={{ once: true }}
         >
           <img
             src="/img/me.webp"
