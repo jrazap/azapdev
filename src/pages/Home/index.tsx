@@ -56,16 +56,16 @@ const Home: FC = () => {
             digital experiences. (Ahmed Elazap)
           </p>
 
-          <div className="my-4">
+          <div className="my-4 flex flex-wrap gap-4">
             <Link
               to={ROUTES.WORKS}
-              className="border-main bg-main hover:text-main rounded-full border-2 px-6 py-4 text-lg font-light text-black transition duration-150 hover:bg-transparent"
+              className="border-main bg-main hover:text-main rounded-full border-2 px-4 py-2 text-lg font-light text-black transition duration-150 hover:bg-transparent md:px-6 md:py-4"
             >
               {t('common:HOMEpage.EXPLORE_WORKS')}
             </Link>
             <a
               href={'#about'}
-              className="border-main text-main hover:bg-main mx-4 rounded-full border-2 bg-transparent px-6 py-4 transition duration-150 hover:text-black"
+              className="border-main text-main hover:bg-main rounded-full border-2 bg-transparent px-4 py-2 transition duration-150 hover:text-black md:px-6 md:py-4"
             >
               {t('common:HOMEpage.VIEW_RESUME')}
             </a>
